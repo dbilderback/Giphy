@@ -24,11 +24,17 @@ function getGifs() {
   });
 }
 
+function startApp() {
+  for (var i =0; i < subjectList.length(); i++) {
+    createButton(subjectList[i]);
+  }
+}
+
 function clearButtons() {
 
 } 
 
-function createButton() {
+function createButton(subject) {
   var divElement = $('#buttons');
   var buttonElement = $('<button>');
   buttonElement.attr("data-to-do", subject);
