@@ -39,7 +39,7 @@ function getGifs(subject) {
   var APIKey = "48p9WSmf5XX57GxiAKzy7Pe25QX89pBV";
 
   // Here we are building the URL we need to query the database
-  var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + subject + "&api_key="+ APIKey + "&limit=10";
+  var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + subject + "&api_key="+ APIKey + "&limit=10";
 
    $.ajax({
     url: queryURL,
