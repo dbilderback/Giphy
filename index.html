@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
   <meta charset="utf-8">
   <title>Giphy App</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
 </head>
-
 <body>
   <!-- Retrieved data will be dumped here -->
-  <div class="buttons"></div>
+  <div class="buttonsContainer" id="buttonsContainer"></div>
+  <label id="dogLabel" class="label">Add Another Dog</label>
+  <input type="text" id="dogInput">
+  <input type="submit" value="submit" class="button" id="addDog">
+
+  <div class="gifsContainer" id="gifsContainer"></div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="assets/js/app.js"></script>
   <script type="text/javascript">
@@ -19,5 +22,4 @@
     });
   </script>
 </body>
-
 </html>
